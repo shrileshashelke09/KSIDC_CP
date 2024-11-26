@@ -1,0 +1,12 @@
+[INFO ] 2024-11-26 13:03:04.854 [main] Log - *** Running test method Business_Information_Module...
+[INFO ] 2024-11-26 13:03:07.087 [main] Log - Driver has initialized successfully for chromebrowser
+[INFO ] 2024-11-26 13:03:19.342 [main] Log - Title is displayed : KSIDC
+[INFO ] 2024-11-26 13:03:19.352 [main] Log - Button visible !
+[INFO ] 2024-11-26 13:03:26.585 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2024-11-26 13:03:28.724 [main] Log - KSIDC.15@gmail.com
+[INFO ] 2024-11-26 13:03:30.882 [main] Log - KSIDCcp@123#
+[INFO ] 2024-11-26 13:03:35.176 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[ERROR] 2024-11-26 13:04:07.217 [main] Log - *** Test execution Business_Information_Module failed...
+[ERROR] 2024-11-26 13:04:07.217 [main] Log - Expected condition failed: waiting for element to be clickable: By.xpath: (//button[@class='button secondary btn-medium'])[2] (tried for 30 second(s) with 500 milliseconds interval)
+[INFO ] 2024-11-26 13:04:08.126 [main] Log - Logout is done
+[INFO ] 2024-11-26 13:04:08.750 [main] Log - *** Test Suite Business_Information_Module ending ***
