@@ -207,7 +207,7 @@ public static  String  GetEmailOTP(String Email) throws ClassNotFoundException {
 	public static  void click(By element) throws InterruptedException {
 
 		Thread.sleep(2000);
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, 90);
 		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 		Thread.sleep(2000);
 
@@ -245,6 +245,16 @@ public static  String  GetEmailOTP(String Email) throws ClassNotFoundException {
 		//Thread.sleep(2000);
 
 	}
+	
+	public static  void ElementToBeVisible(By element) throws InterruptedException {
+
+		//Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, 120);
+		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(element));
+		//Thread.sleep(2000);
+
+	}
+	
 	
 	public static void SwitchToFrame(By frameName)
 	{

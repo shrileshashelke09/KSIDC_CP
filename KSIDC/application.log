@@ -1,12 +1,29 @@
-[INFO ] 2024-11-26 13:03:04.854 [main] Log - *** Running test method Business_Information_Module...
-[INFO ] 2024-11-26 13:03:07.087 [main] Log - Driver has initialized successfully for chromebrowser
-[INFO ] 2024-11-26 13:03:19.342 [main] Log - Title is displayed : KSIDC
-[INFO ] 2024-11-26 13:03:19.352 [main] Log - Button visible !
-[INFO ] 2024-11-26 13:03:26.585 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
-[INFO ] 2024-11-26 13:03:28.724 [main] Log - KSIDC.15@gmail.com
-[INFO ] 2024-11-26 13:03:30.882 [main] Log - KSIDCcp@123#
-[INFO ] 2024-11-26 13:03:35.176 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
-[ERROR] 2024-11-26 13:04:07.217 [main] Log - *** Test execution Business_Information_Module failed...
-[ERROR] 2024-11-26 13:04:07.217 [main] Log - Expected condition failed: waiting for element to be clickable: By.xpath: (//button[@class='button secondary btn-medium'])[2] (tried for 30 second(s) with 500 milliseconds interval)
-[INFO ] 2024-11-26 13:04:08.126 [main] Log - Logout is done
-[INFO ] 2024-11-26 13:04:08.750 [main] Log - *** Test Suite Business_Information_Module ending ***
+[INFO ] 2024-11-27 16:58:20.326 [main] Log - *** Running test method Basic_Information_Module...
+[INFO ] 2024-11-27 16:58:21.730 [main] Log - Driver has initialized successfully for chromebrowser
+[INFO ] 2024-11-27 16:58:32.469 [main] Log - Title is displayed : KSIDC
+[INFO ] 2024-11-27 16:58:32.477 [main] Log - Button visible !
+[INFO ] 2024-11-27 16:58:39.658 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2024-11-27 16:58:41.801 [main] Log - KSIDC.15@gmail.com
+[INFO ] 2024-11-27 16:58:43.917 [main] Log - KSIDCcp@123#
+[INFO ] 2024-11-27 16:58:48.073 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[INFO ] 2024-11-27 16:58:48.073 [main] Log - Login successfully :true
+[INFO ] 2024-11-27 16:58:53.272 [main] Log - Basic Information page redirected successfully :true
+[INFO ] 2024-11-27 16:58:53.336 [main] Log - Basic Information Header DisplayedBy.xpath: //h4[text()='Basic Information']
+[INFO ] 2024-11-27 16:58:53.337 [main] Log - Basic Information Header displayed successfully :true
+[INFO ] 2024-11-27 16:58:53.370 [main] Log - MSME Radio button displayedBy.xpath: //div[@class='col-12']
+[INFO ] 2024-11-27 16:58:53.370 [main] Log - MSME Radio displayed successfully :true
+[INFO ] 2024-11-27 16:58:59.752 [main] Log - Yes toggle clickedBy.xpath: (//label[@class='rz-radiobutton-label']/parent::div)[1]
+[INFO ] 2024-11-27 16:59:06.080 [main] Log - NO toggle clickedBy.xpath: (//label[@class='rz-radiobutton-label']/parent::div)[2]
+[INFO ] 2024-11-27 16:59:06.081 [main] Log - Only one toggle selected at a time successfully :true
+[INFO ] 2024-11-27 16:59:10.340 [main] Log - Clicked on Yes toggle for MSME
+[INFO ] 2024-11-27 16:59:12.354 [main] Log - MSME Yes Selected :true
+[INFO ] 2024-11-27 16:59:13.451 [main] Log - Udyam No data field displayedBy.xpath: //input[@placeholder='UDYAM-XX-00-0000000']
+[INFO ] 2024-11-27 16:59:13.571 [main] Log - UDYAM-MH-19-0044030
+[INFO ] 2024-11-27 16:59:16.580 [main] Log - Udyam no verifiedBy.xpath: (//a[@class='button tertiary inside-btn enabled'])[1]
+[INFO ] 2024-11-27 16:59:20.918 [main] Log - CLicked
+[INFO ] 2024-11-27 17:00:04.667 [main] Log - Verified
+[INFO ] 2024-11-27 17:00:07.678 [main] Log - Udyam No verified :true
+[INFO ] 2024-11-27 17:00:08.725 [main] Log - Name of Enterprises validated :false
+[INFO ] 2024-11-27 17:00:09.784 [main] Log - Type of Enterprises validated :false
+[INFO ] 2024-11-27 17:00:12.143 [main] Log - Logout is done
+[INFO ] 2024-11-27 17:00:12.507 [main] Log - *** Test Suite Basic_Information_Module ending ***

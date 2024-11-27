@@ -12,6 +12,10 @@ public class Business_Information {
 	
 	public By ClicktoLogin = By.xpath("(//button[@class=' w-100 button primary btn-medium'])[1]");
 	
+	public By LoginIdUSer = By.xpath("(//a[@id='LoggedInUser'])[2]");
+	
+	public By LogOut = By.xpath("(//a[@class='dropdown-item'][text()='Log out'])[2]");
+	
 	public By Scroll = By.xpath("//h6[text()='Term Loan KSIDC']");
 	
 	public By EnquiryNowTermLoanKSIDC = By.xpath("(//button[@class='button tertiary btn-medium w-100'])[2]");
@@ -110,10 +114,41 @@ public class Business_Information {
     public By ProjectLand = By.xpath("//label[text()='Project Land']/parent::div");
     
     public By SelectProjectLand = By.xpath("//span[text()='Owned']");
+    
+    public By ProductionCapacity = By.xpath("//input[@placeholder='Production Capacity(Quantity Per Annum) Test']");
+    
+    public By PollutionCategory = By.xpath("//label[text()='Pollution Category']/parent::div");
 
+    public By SelectPollutionCategory = By.xpath("//span[text()='Green']");
+    
+    public By ProjectNature = By.xpath("//label[text()='Project Nature']/parent::div");
+    
+    public By SelectProjectNature = By.xpath("//span[text()='Product development']");
+    
+    public By FirstCharge = By.xpath("//p[text()='First Charge For The Collateral Security Can Be Provided']");
+    
+    public By SelectYESToggle = By.xpath("(//div[@class='rz-radiobutton-box'])[1]");
+    
+    public By ExclusiveFirstCharge = By.xpath("//p[text()='Can An Exclusive First Charge On The Company Assets Be Provided']");
+    
+    public By SelectYESforexclusive = By.xpath("(//div[@class='rz-radiobutton-box'])[2]"); 
+    
+    public By ExistingAsset = By.xpath("//p[text()='Whether Existing Assets Can Be Mortgaged As Security For The Loan']");
+    
+    public By SelectYesforExistingAsset = By.xpath("(//div[@class='rz-radiobutton-box'])[3]");
+    
+    public By TermsandCondition = By.xpath("//label[@class='form-check-label']");
+    
+    public By TermsandConditioncheckbox = By.xpath("//span[@class='rz-chkbox-icon']/parent::div");
+    
+    public By Submit = By.xpath("//button[@class='button primary btn-medium d-flex align-items-center justify-content-center']");
 
-
-
+    public By SuucessGreenMark = By.xpath("//div[@class='success-animation']");
+    
+    public By SuccessMessage = By.xpath("(//span[@class='d-flex text-center py-4'])[1]");
+    
+    public By LoanAppbutton = By.xpath("(//button[@class='w-100 button primary btn-medium'])[1]");
+    		
 
 
 }

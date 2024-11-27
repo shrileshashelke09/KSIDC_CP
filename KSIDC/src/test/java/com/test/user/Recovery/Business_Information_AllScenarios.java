@@ -71,22 +71,28 @@ public class Business_Information_AllScenarios extends Base_Class{
 				String ApproxTotalLabourCount = testdata.get("ApproxTotalLabourCount").toString();
 				String DocketNumber = testdata.get("DocketNumber").toString();
 				String TreasuryReleaseDate = testdata.get("TreasuryReleaseDate").toString();
+				String ProductionCapacityQuantityPerAnnumTest = testdata.get("ProductionCapacityQuantityPerAnnumTest").toString();
 				
 				//TC001
 				ExtentTestManager.startTest("TestScenario01 : Login for Business Information Module");
 				boolean Login = Business_Information_Module.Login(EmailAddress, Password);
-				ExtentTestManager.getTest().log(Status.PASS,
-						"Login Successfully" + Business_Information_Module.Login(EmailAddress, Password));
-				Log.info("Logged in !" + Login);
+//				
 				//ExtentTestManager.startTest("Login successfully" + Login);
-				//Log.info("Login successfully :" + Login);
+				ExtentTestManager.getTest().log(Status.PASS , "Login successfully" + Login);
+				Log.info("Login successfully :" + Login);
 
+				//Logout KSIDC
+				
+//				boolean LogoutKSIDC = Business_Information_Module.Logout();
+//				ExtentTestManager.getTest().log(Status.PASS,"Logout Successfully" + LogoutKSIDC);
+//				Log.info("Logged out !" + LogoutKSIDC);
 				
 
 				//TC003
 				
 				boolean EnquiryNowTermLoanKSIDC = Business_Information_Module.EnquiryNowTermLoanKSIDC();
 				ExtentTestManager.startTest("Enquiry now button clicked and Redirected to Business Information page " + EnquiryNowTermLoanKSIDC);
+				ExtentTestManager.getTest().log(Status.PASS , "Enquiry now button clicked and Redirected to Business Information page" + EnquiryNowTermLoanKSIDC);
 				Log.info("Enquiry now button clicked and Redirected to Business Information page :" + EnquiryNowTermLoanKSIDC);
 
 				//TC004
@@ -242,8 +248,73 @@ public class Business_Information_AllScenarios extends Base_Class{
 				
 				boolean SelectProjectLand = Business_Information_Module.SelectProjectLand();
 				ExtentTestManager.startTest("Selected Project Land displayed" + SelectProjectLand);
+				ExtentTestManager.getTest().log(Status.PASS, "Owned land selected" + SelectProjectLand );
 				Log.info("Selected Project Land  displyed :" + SelectProjectLand);
+				
+				//TC043
+				
+				boolean ProductionCapacity = Business_Information_Module.EnterProductionCapacity(ProductionCapacityQuantityPerAnnumTest);
+				ExtentTestManager.startTest("Entered Capacity displayed" + ProductionCapacity);
+				ExtentTestManager.getTest().log(Status.PASS , "Entered Capacity displayed" + ProductionCapacity);
+				Log.info("Entered Capacity displayed :" + ProductionCapacity);
+				
+				//TC044
+				
+				boolean SelectPollutionCategory = Business_Information_Module.SelectPollutionCategory();
+				ExtentTestManager.startTest("Selected pollution category displayed" + SelectPollutionCategory);
+				ExtentTestManager.getTest().log(Status.PASS , "Selected pollution category displayed" + SelectPollutionCategory);
+				Log.info("Selected pollution category displayed :" + SelectPollutionCategory);
 
+				
+				//TC045
+				
+				boolean SelectrojectNature = Business_Information_Module.SelectProjectNature();
+				ExtentTestManager.startTest("Selected Project Nature displayed" + SelectrojectNature);
+				ExtentTestManager.getTest().log(Status.PASS , "Selected Project Nature displayed" + SelectrojectNature);
+				Log.info("Selected Project Nature displayed :" + SelectrojectNature);
+				
+				//TC046
+				
+				boolean SelectYESforfirstcharge = Business_Information_Module.SelectYESforFirstcharge();
+				ExtentTestManager.startTest("Selected YES displayed" + SelectYESforfirstcharge);
+				ExtentTestManager.getTest().log(Status.PASS , "Selected YES displayed" + SelectYESforfirstcharge);
+				Log.info("Selected YES displayed :" + SelectYESforfirstcharge);
+				
+				//TC047
+				
+				
+				boolean SelectYESforExclusivefirstcharge = Business_Information_Module.SelectYESforExclusiveFirstcharge();
+				ExtentTestManager.startTest("Selected YES displayed" + SelectYESforExclusivefirstcharge);
+				ExtentTestManager.getTest().log(Status.PASS , "Selected YES displayed" + SelectYESforExclusivefirstcharge);
+				Log.info("Selected YES displayed :" + SelectYESforExclusivefirstcharge);
+				
+				//TC048
+				boolean SelectYesforExistingAsset = Business_Information_Module.ExistingAsset();
+				ExtentTestManager.startTest("Selected YES displayed" + SelectYesforExistingAsset);
+				ExtentTestManager.getTest().log(Status.PASS , "Selected YES displayed" + SelectYesforExistingAsset);
+				Log.info("Selected YES displayed :" + SelectYesforExistingAsset);
+				
+				//TC049
+				
+				boolean SelectCheckboxforTermsandCondition = Business_Information_Module.CheckboxofTermsandCondition();
+				ExtentTestManager.startTest("Checked checkbox displayed" + SelectCheckboxforTermsandCondition);
+				ExtentTestManager.getTest().log(Status.PASS , "Checked checkbox displayed" + SelectCheckboxforTermsandCondition);
+				Log.info("Checked checkbox displayed :" + SelectCheckboxforTermsandCondition);
+				
+				//TC050
+				
+				boolean submit = Business_Information_Module.Submit();
+				ExtentTestManager.startTest("Business information submitted" + submit);
+				ExtentTestManager.getTest().log(Status.PASS , "Business information submitted" + submit);
+				Log.info("Business information submitted :" + submit);
+				
+				//TC051
+				
+				boolean successcheck = Business_Information_Module.Submit();
+				ExtentTestManager.startTest("Business information Sucessfully submitted" + successcheck);
+				ExtentTestManager.getTest().log(Status.PASS , "Business information Sucessfully submitted" + successcheck);
+				Log.info("Business information Sucessfully submitted :" + successcheck);
+				
 				//App Logout
 				
 				Thread.sleep(2000);
@@ -277,7 +348,7 @@ public class Business_Information_AllScenarios extends Base_Class{
 
 			// Logout
 			context.setAttribute("fileName", "Logout");
-			//driver.quit();
+			driver.quit();
 			ExtentTestManager.getTest().log(Status.PASS, "Application Logout");
 			Log.info("Logout is done");
 

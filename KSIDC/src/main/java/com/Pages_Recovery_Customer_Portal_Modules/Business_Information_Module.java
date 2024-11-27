@@ -10,6 +10,8 @@ import com.Utility.Log;
 import com.aventstack.extentreports.Status;
 import com.extentReports.ExtentTestManager;
 
+
+
 public class Business_Information_Module extends Base_Class {
 
 	Business_Information Business_Information = new Business_Information ();
@@ -31,6 +33,17 @@ public class Business_Information_Module extends Base_Class {
 		return true;
 		
 	}
+	
+	//Logout
+	
+//	public boolean Logout () throws InterruptedException {
+//		
+//		click(Business_Information.LoginIdUSer);
+//		Thread.sleep(1000);
+//		click(Business_Information.LogOut);
+//		return true;
+//		
+//	}
 	
 	//TC002 
 //	public boolean Invalidcredentials(String EnterEmailAddress , String EnterPassword) throws InterruptedException {
@@ -459,8 +472,117 @@ public class Business_Information_Module extends Base_Class {
 						Log.info("Project Land field displayed" + Business_Information.ProjectLand);
 						click(Business_Information.ProjectLand);
 						Log.info("Clicked on Project Land" + Business_Information.ProjectLand);
+						click(Business_Information.SelectProjectLand);
+						Log.info("Project Land Selected" + Business_Information.SelectProjectLand);
 						return true;
 					}
+					
+					//TC043 
+					
+					public boolean EnterProductionCapacity (String ProductionCapacity) throws InterruptedException {
+						
+						ElementDisplayed(Business_Information.ProductionCapacity);
+						Log.info("Production Capacity field displayed" + Business_Information.ProductionCapacity);
+						input(Business_Information.ProductionCapacity ,ProductionCapacity );
+						return true;
+					}
+					
+					//TC044
+					
+					public boolean SelectPollutionCategory() throws InterruptedException {
+						
+						ElementDisplayed(Business_Information.PollutionCategory);
+						Log.info("Pollution category field displayed" + Business_Information.PollutionCategory);
+						click(Business_Information.PollutionCategory);
+						Log.info("Pollution category dropdown displayed" + Business_Information.PollutionCategory);
+						click(Business_Information.SelectPollutionCategory);
+						Log.info("Category selected"+ Business_Information.SelectPollutionCategory);
+						return true;
+					}
+					
+					//TC045
+					
+                       public boolean SelectProjectNature() throws InterruptedException {
+						
+						ElementDisplayed(Business_Information.ProjectNature);
+						Log.info("Project Nature field displayed" + Business_Information.ProjectNature);
+						click(Business_Information.ProjectNature);
+						Log.info("Project Nature dropdown displayed" + Business_Information.ProjectNature);
+						click(Business_Information.SelectProjectNature);
+						Log.info("Nature selected"+ Business_Information.SelectProjectNature);
+						return true;
+					}
+                       
+                       //TC046
+                       
+                       public boolean SelectYESforFirstcharge () throws InterruptedException {
+                    	   
+                    	   ElementDisplayed(Business_Information.FirstCharge);
+                    	   Log.info("Data field displayed" + Business_Information.FirstCharge);
+                    	   click(Business_Information.SelectYESToggle);
+                    	   Thread.sleep(1000);
+                    	   return true;
+                       }
+                       
+                       //TC047
+                         public boolean SelectYESforExclusiveFirstcharge () throws InterruptedException {
+                    	   
+                    	   ElementDisplayed(Business_Information.ExclusiveFirstCharge);
+                    	   Log.info("Data field displayed" + Business_Information.ExclusiveFirstCharge);
+                    	   click(Business_Information.SelectYESforexclusive);
+                    	   ScrollUntilElementVisible(Business_Information.ProjectNature);
+                    	   Thread.sleep(1000);
+                    	   return true;
+                       }
+                         
+                         public boolean ExistingAsset () throws InterruptedException {
+                        	 
+                        	 ElementDisplayed(Business_Information.ExistingAsset);
+                        	 Log.info("Data field displayed" + Business_Information.ExistingAsset);
+                      	   click(Business_Information.SelectYesforExistingAsset);
+                      	   ScrollUntilElementVisible(Business_Information.FirstCharge);
+                      	   Thread.sleep(1000);
+                      	   return true;
+                        	 
+                         }
+                         
+                         //TC049
+                         
+                         public boolean CheckboxofTermsandCondition () throws InterruptedException {
+                        	 
+                        	 ElementDisplayed(Business_Information.TermsandCondition);
+                        	 Log.info("Terms and condition visible" + Business_Information.TermsandCondition);
+                        	 click(Business_Information.TermsandConditioncheckbox);
+                        	 Log.info("Check box got ticked" + Business_Information.TermsandConditioncheckbox);
+                        	 return true;
+                         }
+                         
+                         //TC050
+                         
+                         public boolean Submit () throws InterruptedException {
+                        	 
+                        	 ElementDisplayed(Business_Information.Submit);
+                        	 Log.info("Submit button displayed" + Business_Information.Submit);
+                        	 click(Business_Information.Submit);
+                        	 return true;
+                        	 
+                        	 
+                         }
+                         
+                         //TC051 
+                         
+                         public boolean SuccessChecke () throws InterruptedException {
+                        	 
+                        	 ElementDisplayed(Business_Information.SuucessGreenMark);
+                        	 Log.info("SuccessMark displayed" + Business_Information.SuucessGreenMark);
+                        	 ElementDisplayed(Business_Information.SuccessMessage);
+                        	 Log.info("Suucess message displayed" + Business_Information.SuccessMessage);
+                        	 ElementDisplayed(Business_Information.LoanAppbutton);
+                        	 click(Business_Information.LoanAppbutton);
+                        	 Log.info("Loan Application button clicked" + Business_Information.LoanAppbutton);
+                        	 return true;
+                         }
+                       
 	
 		}
 				
